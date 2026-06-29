@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ts7-lsp-marketplace",
-  "description": "Local marketplace providing a TypeScript LSP backed by the native TypeScript 7 language server (typescript@rc)",
+  "description": "Marketplace providing a TypeScript LSP backed by the native TypeScript 7 language server (typescript@rc)",
   "owner": {
     "name": "mjn",
     "email": "mike@seedless.club"

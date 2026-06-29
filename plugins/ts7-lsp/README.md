@@ -36,8 +36,8 @@ tsc --lsp --help     # -> prints "Usage of lsp:"
 ## Enable
 
 ```bash
-# 1. Register this local marketplace (point at the plugin root, not the manifest):
-/plugin marketplace add /path/to/ts7-lsp-plugin
+# 1. Register this marketplace from GitHub (or pass the full URL / a local checkout path):
+/plugin marketplace add mjn298/ts7-lsp-plugin
 
 # 2. Install the plugin:
 /plugin install ts7-lsp@ts7-lsp-marketplace
