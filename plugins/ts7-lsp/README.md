@@ -18,14 +18,20 @@ tsserver-plugin features may be incomplete.
 
 ## Prerequisite: install the TypeScript 7 RC
 
-The plugin launches `tsc --lsp --stdio`, so a TypeScript 7 `tsc` must be on your `PATH`.
+The plugin launches `tsc --lsp --stdio`, so the **only** requirement is that a TypeScript 7
+`tsc` is on your `PATH`. How it gets there doesn't matter — use whatever package manager you
+already use:
 
 ```bash
-# global install (use your package manager of choice):
-pnpm add -g typescript@rc
-# or: npm install -g typescript@rc
+npm install -g typescript@rc     # npm
+pnpm add -g typescript@rc        # pnpm
+yarn global add typescript@rc    # yarn
+bun add -g typescript@rc         # bun
+```
 
-# verify it's TS7 and speaks LSP:
+Then verify it's TS7 and speaks LSP:
+
+```bash
 tsc --version        # -> Version 7.x
 tsc --lsp --help     # -> prints "Usage of lsp:"
 ```
@@ -42,7 +48,8 @@ tsc --lsp --help     # -> prints "Usage of lsp:"
 # 2. Install the plugin:
 /plugin install ts7-lsp@ts7-lsp-marketplace
 
-# 3. Disable the official Node-based server so the two don't both claim TS files:
+# 3. ONLY if you'd previously installed the official `typescript-lsp` plugin:
+#    disable it so the two don't both claim TS files. Skip this if you never installed it.
 /plugin disable typescript-lsp@claude-plugins-official
 ```
 

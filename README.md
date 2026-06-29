@@ -18,10 +18,10 @@ plugins/ts7-lsp/README.md         # install + enable instructions
 ## Quick start
 
 ```bash
-pnpm add -g typescript@rc                          # provides a TS7 `tsc` on PATH (or: npm i -g typescript@rc)
+npm install -g typescript@rc                       # a TS7 `tsc` on PATH — any package manager works
 /plugin marketplace add mjn298/ts7-lsp-plugin      # add this marketplace straight from GitHub
 /plugin install ts7-lsp@ts7-lsp-marketplace
-/plugin disable typescript-lsp@claude-plugins-official
+/plugin disable typescript-lsp@claude-plugins-official   # ONLY if you'd already installed the official TS LSP
 /reload-plugins
 ```
 
