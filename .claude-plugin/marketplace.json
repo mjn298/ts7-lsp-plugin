@@ -1,0 +1,42 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ts7-lsp-marketplace",
+  "description": "Local marketplace providing a TypeScript LSP backed by the native TypeScript 7 language server (typescript@rc)",
+  "owner": {
+    "name": "mjn",
+    "email": "mike@seedless.club"
+  },
+  "plugins": [
+    {
+      "name": "ts7-lsp",
+      "description": "TypeScript/JavaScript language server backed by the native TypeScript 7 server (typescript@rc, invoked as `tsc --lsp`)",
+      "version": "1.0.0",
+      "author": {
+        "name": "mjn",
+        "email": "mike@seedless.club"
+      },
+      "source": "./plugins/ts7-lsp",
+      "category": "development",
+      "strict": false,
+      "lspServers": {
+        "typescript": {
+          "command": "tsc",
+          "args": [
+            "--lsp",
+            "--stdio"
+          ],
+          "extensionToLanguage": {
+            ".ts": "typescript",
+            ".tsx": "typescriptreact",
+            ".js": "javascript",
+            ".jsx": "javascriptreact",
+            ".mts": "typescript",
+            ".cts": "typescript",
+            ".mjs": "javascript",
+            ".cjs": "javascript"
+          }
+        }
+      }
+    }
+  ]
+}
