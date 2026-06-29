@@ -3,11 +3,15 @@
 TypeScript/JavaScript language server for Claude Code backed by the **native TypeScript 7**
 language server (`typescript@rc`).
 
-This is a local alternative to the official `typescript-lsp` plugin, which launches the
+This is an alternative to the official `typescript-lsp` plugin, which launches the
 Node-based `typescript-language-server` (a wrapper around the classic `tsserver`). TypeScript 7
 is the native Go rewrite and implements LSP directly — no wrapper — so it starts faster and
 uses less memory. It is still a **release candidate**: some refactors, completions, and
 tsserver-plugin features may be incomplete.
+
+> **Unofficial.** Community project — **not** affiliated with, endorsed by, or maintained by
+> Microsoft or the TypeScript team. "TypeScript" and `tsc` are products of Microsoft; this
+> plugin only wires the `typescript@rc` LSP into Claude Code. Provided as-is.
 
 > Naming note: the pre-RC nightlies shipped as `@typescript/native-preview` with a binary
 > called `tsgo`. As of the 7.0 RC the package is just `typescript@rc` and the binary is

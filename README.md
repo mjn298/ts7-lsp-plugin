@@ -8,6 +8,10 @@ It replaces the official `typescript-lsp` plugin (which uses the Node-based
 `typescript-language-server` wrapper around the classic `tsserver`) with the faster native
 Go implementation.
 
+> **Unofficial.** This is a community project and is **not** affiliated with, endorsed by, or
+> maintained by Microsoft or the TypeScript team. "TypeScript" and `tsc` are products of
+> Microsoft; this repo just wires the `typescript@rc` LSP into Claude Code. Provided as-is.
+
 ## Layout
 
 ```
