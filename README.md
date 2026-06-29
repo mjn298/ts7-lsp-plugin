@@ -34,3 +34,7 @@ npm install -g typescript@rc                       # a TS7 `tsc` on PATH — any
 
 See [`plugins/ts7-lsp/README.md`](plugins/ts7-lsp/README.md) for full details and the
 switch-back instructions.
+
+## License
+
+[0BSD](LICENSE) — public-domain-equivalent, no attribution required. Do whatever you want.
